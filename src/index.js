@@ -1,3 +1,9 @@
-let vSameWidthAndHeight = {}
+import directive from './directive'
 
-export default vSameWidthAndHeight
+let directives = {}
+
+directives.install = function (Vue, options) {
+  Vue.use(directive)
+}
+
+export default directives

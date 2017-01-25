@@ -1,7 +1,7 @@
 {
   "name": "v-same-width-and-height",
   "description": "v-same-width-and-height",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "limichange <limichange@hotmail.com>",
   "main": "src/index.js",
   "scripts": {
@@ -14,8 +14,7 @@
   "pre-commit": [
     "lint"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "ava": "^0.17.0",
     "eslint": "^3.13.1",

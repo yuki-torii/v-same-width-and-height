@@ -14,7 +14,14 @@ $ yarn add v-same-width-and-height
 
 ## Usage
 ```js
-import v-same-width-and-height from 'v-same-width-and-height'
+import Vue from 'vue'
+import vSameWidthAndHeight from 'v-same-width-and-height'
+
+vue.use(vSameWidthAndHeight)
+```
+
+```html
+<img v-same-width-and-height src="foo.png" alt="foo">
 ```
 
 ## Development

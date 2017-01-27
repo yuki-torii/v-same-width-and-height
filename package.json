@@ -3,7 +3,7 @@
   "description": "v-same-width-and-height",
   "version": "0.0.2",
   "author": "limichange <limichange@hotmail.com>",
-  "main": "src/index.js",
+  "main": "dist/v-same-width-and-height.common.js",
   "scripts": {
     "dev": "rollup -cw",
     "build": "rollup -c --environment BUILD && uglifyjs dist/v-same-width-and-height.js > dist/v-same-width-and-height.min.js",

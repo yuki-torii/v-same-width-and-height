@@ -1,7 +1,7 @@
 {
   "name": "v-same-width-and-height",
   "description": "v-same-width-and-height",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "limichange <limichange@hotmail.com>",
   "main": "dist/v-same-width-and-height.common.js",
   "scripts": {

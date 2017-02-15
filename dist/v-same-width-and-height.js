@@ -12,9 +12,10 @@ sameWidthAndHeight.install = function (Vue, opts) {
   Vue.directive('sameWidthAndHeight', {
     bind: function bind (el) {
       el.addEventListener('load', function (e) {
-        var width = el.getBoundingClientRect().width + 'px';
-        el.style.width = width;
-        el.style.height = width;
+        var width = el.getBoundingClientRect().width;
+        if (width > 0) {
+          el.style.width = el.style.height = width + "px";
+        }
       });
     }
   });

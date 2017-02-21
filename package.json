@@ -5,7 +5,7 @@
   "author": "limichange <limichange@hotmail.com>",
   "main": "dist/v-same-width-and-height.common.js",
   "scripts": {
-    "dev": "rollup -cw",
+    "dev": "rollup -cw --environment BUILD",
     "build": "rollup -c --environment BUILD && uglifyjs dist/v-same-width-and-height.js > dist/v-same-width-and-height.min.js",
     "test": "npm run lint && ava",
     "lint": "eslint --ext .js src test/unit/specs"

@@ -1,11 +1,18 @@
 let sameWidthAndHeight = {}
 
 sameWidthAndHeight.install = function (Vue, opts = {}) {
-  Vue.directive('sameWidthAndHeight', function (el) {
+  function resize (el) {
     var width = el.getBoundingClientRect().width
     if (width > 0) {
-      el.style.width = el.style.height = `${width}px`
+      el.style.height = `${width}px`
     }
+  }
+
+  Vue.directive('sameWidthAndHeight', function (el) {
+    resize(el)
+    el.addEventListener('resize', () => {
+      resize(el)
+    })
   })
 }
 
